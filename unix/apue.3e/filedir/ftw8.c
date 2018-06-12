@@ -101,7 +101,7 @@ dopath(Myfunc* func)
 	}
 	fullpath[n++] = '/';
 	fullpath[n] = 0;
-
+	printf("%s\n",fullpath);
 	if ((dp = opendir(fullpath)) == NULL)	/* can't read directory */
 		return(func(fullpath, &statbuf, FTW_DNR));
 

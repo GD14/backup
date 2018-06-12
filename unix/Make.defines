@@ -4,7 +4,8 @@ CFLAGS = -I../lib -g -O2 -D_REENTERANT -Wall
 
 LIBS = ../librong.a -lpthread
 
-LIB_OBJS = error.o writen.o str_echo.o readline.o wrapstdio.o str_cli.o
+LIB_OBJS = error.o writen.o str_echo.o readline.o wrapstdio.o str_cli.o \
+			pathalloc.o
 
 RANLIB = ranlib
 

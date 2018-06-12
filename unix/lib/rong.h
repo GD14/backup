@@ -11,6 +11,7 @@
 #include 	<sys/socket.h>
 #include 	<sys/wait.h>
 #include 	<netinet/in.h>
+#include 	<sys/stat.h>
 #define min(a,b) ((a) < (b) ? (a) : (b))
 #define max(a,b) ((a) > (b) ? (a) : (b))
 
@@ -40,4 +41,5 @@ void    err_ret(const char *,...);
 void    err_sys(const char *,...);
 
 
+char* 	path_alloc(size_t *);
 #endif
